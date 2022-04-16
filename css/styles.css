@@ -10,14 +10,14 @@ body {
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
     
 }
 
 .container {
    display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -59,6 +59,10 @@ p {
     margin-bottom: 10px;
     line-height: 1.4;
     color:#333;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ol {
@@ -128,3 +132,19 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }  
+
+    .cognito {
+        height: 650px !important;
+        overflow: hidden !important;
+    }
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
